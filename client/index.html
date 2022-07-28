@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>This is SoOoOOoo fetch!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <main>
-      <form class="js-add-animal">
-        <input placeholder="name" name="name" />
-        <input placeholder="diet" name="diet" />
-        <input placeholder="fun fact" name="fun_fact" />
-        <input type="submit" value="Add Animal!">
-      </form>
-      <section class="js-animals"></section>
-      <section>
-        <form class="animal-id" >
-          <label>This is only to demonstrate internal server error</label>
-          <input placeholder = "What is the ID of the animal you are looking for?" name="animal-id">
-          <input type="submit" value="Get one animal"/>
-        </form>
-      </section>
-    </main>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>This is SoOoOOoo fetch!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<main>
+  <form class="js-add-animal">
+    <input placeholder="name" name="name" required/>
+    <input placeholder="diet" name="diet" required/>
+    <input placeholder="fun fact" name="fun_fact" required/>
+    <input type="submit" value="Add Animal!">
+  </form>
+  <p class="js-add-error"></p>
+  <section class="js-animals"></section>
+  <section>
+    <form class="animal-id" >
+      <label>This is only to demonstrate internal server error</label>
+      <input placeholder = "What is the ID of the animal you are looking for?" name="animal-id" required>
+      <input type="submit" value="Get one animal"/>
+    </form>
+    <p class="js-get-error"></p>
+  </section>
+</main>
+<script src="index.js"></script>
+</body>
 </html>
