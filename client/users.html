@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<main>
+    <form class="js-add-user">
+        <input placeholder="name" type="text" name="name"/>
+        <input placeholder="status" type="text" name="status"/>
+        <input placeholder="interests" type="text" name="interests"/>
+        <input type="submit" value="Add User!"/>
+        <p class="add-error"></p>
+        <section class="users"></section>
+    </form>
+    <p class="js-add-error"></p>
+    <section class="js-users"></section>
+    <section>
+        <form class="user-id">
+            <label>This is only to demonstrate internal server error</label>
+            <input placeholder="What is the ID of the user you are looking for?" name="user-id" required/>
+            <input type="submit" value="Get one user"/>
+        </form>
+        <p class="js-get-error"></p>
+    </section>
+</main>
+<script src="entities.js"></script>
+<script src="users.js"></script>
+</body>
+</html>
