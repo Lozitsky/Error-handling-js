@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sport Team</title>
+</head>
+<body>
+<main>
+    <form class="js-add-sport-team">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="head_coach" name="head_coach">
+        <input type="text" placeholder="sport" name="sport">
+        <input type="submit" value="Add Team!">
+    </form>
+    <p class="js-add-error"></p>
+    <section class="js-team"></section>
+    <section>
+        <form class="team-id">
+            <label>This is only to demonstrate internal server error</label>
+            <input placeholder="What is the ID of the team you are looking for?" name="team-id" required>
+            <input type="submit" value="Get one team"/>
+        </form>
+        <p class="js-get-error"></p>
+    </section>
+</main>
+<script src="entities.js"></script>
+<script src="team.js"></script>
+</body>
+</html>

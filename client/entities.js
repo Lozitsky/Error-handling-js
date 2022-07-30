@@ -21,7 +21,6 @@ const getAllEntities = entitiesUrl => {
 
 //Get one entity
 const getEntity = (id, entitiesUrl) => {
-    // id = 10;
     fetch(`${entitiesUrl}/${id}`)
         .then(checkForError)
         .then(addEntitiesToPage)
